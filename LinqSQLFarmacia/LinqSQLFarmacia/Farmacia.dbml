@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EJERCICIO PROPUESTO" Class="FarmaciaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=PC-FABRIZIO\SQLEXPRESS;Initial Catalog=&quot;EJERCICIO PROPUESTO&quot;;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EJERCICIO_PROPUESTOConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PRODUCTO" Member="PRODUCTO">
+    <Type Name="PRODUCTO">
+      <Column Name="idproducto" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="marca" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="precio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="VENTA_PRODUCTO" Member="VENTA" ThisKey="idproducto" OtherKey="idventa" Type="VENTA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VENTA" Member="VENTA">
+    <Type Name="VENTA">
+      <Column Name="idventa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="total" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="VENTA_PRODUCTO" Member="PRODUCTO" ThisKey="idventa" OtherKey="idproducto" Type="PRODUCTO" Cardinality="One" />
+    </Type>
+  </Table>
+</Database>

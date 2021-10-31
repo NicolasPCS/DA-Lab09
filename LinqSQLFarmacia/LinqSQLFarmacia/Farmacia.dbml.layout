@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Farmacia">
+  <DataContextMoniker Name="/FarmaciaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="09e06326-5c9b-4aee-a107-b4c1e1925732" absoluteBounds="4.375, 1.25, 2.125, 1.9631982421875">
+      <DataClassMoniker Name="/FarmaciaDataContext/PRODUCTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d26cec7-7c96-4372-af72-403c3231769f" absoluteBounds="4.39, 1.71, 2.0949999999999998, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85df737f-d9cd-435c-aa3f-74e2e6e5da3f" absoluteBounds="1, 1.125, 2.125, 1.3862939453125">
+      <DataClassMoniker Name="/FarmaciaDataContext/VENTA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e9e4b7d-35e2-4ae0-a18a-a7ebf2f7fca0" absoluteBounds="1.015, 1.585, 2.0949999999999998, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 1.88064697265625); (4.375 : 1.88064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FarmaciaDataContext/VENTA/VENTA_PRODUCTO" />
+      <nodes>
+        <classShapeMoniker Id="85df737f-d9cd-435c-aa3f-74e2e6e5da3f" />
+        <classShapeMoniker Id="09e06326-5c9b-4aee-a107-b4c1e1925732" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
