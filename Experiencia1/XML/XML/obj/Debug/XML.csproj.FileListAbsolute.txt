@@ -1,0 +1,2 @@
+C:\Users\Usuario\source\repos\XML\XML\obj\Debug\XML.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\XML\XML\obj\Debug\XML.csproj.CoreCompileInputs.cache
